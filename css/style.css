@@ -1,0 +1,142 @@
+:root {
+    --bg: #0f172a;
+    --panel: rgba(15, 23, 42, 0.9);
+    --primary: #4cc9f0;
+    --primary-dark: #1d4ed8;
+    --text: #e2e8f0;
+    --muted: #a7b7d0;
+    --danger: #ff6b6b;
+    --success: #a7f3d0;
+    --border: rgba(255, 255, 255, 0.12);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #0f172a 0%, #162b44 50%, #1d4e89 100%);
+    color: var(--text);
+}
+
+#app {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    padding: 24px;
+}
+
+.pin-screen,
+.username-screen,
+.waiting-room {
+    width: min(480px, 100%);
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    padding: 32px 24px;
+    box-shadow: 0 24px 40px rgba(15, 23, 42, 0.4);
+    text-align: center;
+}
+
+.pin-screen h1,
+.username-screen h1,
+.waiting-room h1 {
+    margin: 0 0 12px;
+    font-size: clamp(1.8rem, 4vw, 2.6rem);
+    color: var(--text);
+}
+
+.subtitle,
+.waiting-meta,
+.status {
+    color: var(--muted);
+    margin: 0 0 16px;
+}
+
+.pin-screen input,
+.username-screen input {
+    width: 100%;
+    padding: 16px 18px;
+    font-size: 1.05rem;
+    border-radius: 12px;
+    border: 1px solid var(--border);
+    background: rgba(255, 255, 255, 0.04);
+    color: var(--text);
+    text-align: center;
+    outline: none;
+}
+
+.pin-screen input::placeholder,
+.username-screen input::placeholder {
+    color: #a6bfd7;
+}
+
+.pin-screen input:focus,
+.username-screen input:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px rgba(76, 201, 240, 0.18);
+}
+
+.pin-screen button,
+.username-screen button,
+.waiting-room button {
+    margin-top: 18px;
+    width: 100%;
+    padding: 14px 18px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+    color: #03111d;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.erro {
+    min-height: 24px;
+    margin-top: 16px;
+    color: var(--danger);
+    font-size: 0.95rem;
+}
+
+.waiting-user {
+    margin: 10px 0 16px;
+    font-size: 1.9rem;
+    font-weight: 700;
+    color: var(--success);
+}
+
+.participants-box {
+    margin-top: 20px;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 14px 16px;
+    text-align: left;
+}
+
+.participants-box h2 {
+    margin: 0 0 12px;
+    font-size: 1rem;
+    color: var(--text);
+}
+
+.participants-box ul {
+    margin: 0;
+    padding-left: 18px;
+    color: var(--text);
+}
+
+.participants-box li + li {
+    margin-top: 8px;
+}
+
+.waiting-room button {
+    margin-top: 22px;
+    background: rgba(255, 255, 255, 0.08);
+    color: var(--text);
+    border: 1px solid var(--border);
+}

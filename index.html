@@ -4,10 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Corp-Quest</title>
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
+
+    <div id="components">
+        <section class="start-game"> 
+            <button>START</button>
+        </section>
+
+        <video class="scene" src="./img/example.mp4" autoplay>
+
+        </video>
+
+
+        <section class="question">
+            <article>
+                <header>
+                    <h1>Pergunta 1</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur accusantium et quis ut, voluptatem quam iusto blanditiis deleniti ipsum iure repellat temporibus numquam. Repellat reprehenderit hic sit provident labore vero!</p>
+                </header>
+                <div class="alternatives">
+                    <button onclick="answer('A')"> <strong>A</strong> <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus voluptatum illo voluptas debitis numquam? Quos sapiente officia quia, dicta ad illo impedit assumenda laboriosam</p> </button>
+                    <button onclick="answer('B')"> <strong>B</strong> <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus voluptatum illo voluptas debitis numquam? Quos sapiente officia quia, dicta ad illo impedit assumenda laboriosam</p> </button>
+                    <button onclick="answer('C')"> <strong>C</strong> <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus voluptatum illo voluptas debitis numquam? Quos sapiente officia quia, dicta ad illo impedit assumenda laboriosam</p> </button>
+                    <button onclick="answer('D')"> <strong>D</strong> <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus voluptatum illo voluptas debitis numquam? Quos sapiente officia quia, dicta ad illo impedit assumenda laboriosam</p> </button>
+                </div>
+            </article>
+            
+        </section>
+
+
+    </div>
+
+    <main class="app">
+        <section class="start-game"> 
+            <button onclick="play()">START</button>
+        </section>
+    </main>
     
-    <script src="/js/script.js">    </script>
+    
+    <script src="./js/perguntas.js" defer>    </script>
+    <script src="./js/script.js" defer>    </script>
 </body>
 </html>

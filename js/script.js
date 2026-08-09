@@ -2,20 +2,39 @@
 const components = Array.from(document.getElementById("components").children);
 
 const startMenu = components[0].cloneNode(true);
-const videoPlayer = components[1].cloneNode(true);
+// const videoPlayer = components[1].cloneNode(true);
+const image = components[1].cloneNode(true);
 const questionMenu = components[2].cloneNode(true);
+const modalCorrect = components[3].cloneNode(true);
+const finishMenu = components[4].cloneNode(true);
+
+const correctVideoPlayer = document.getElementById("video-correct");
 
 const app = document.querySelector(".app");
 
-const videos = [
-    "./img/example.mp4",
-    "./img/example.mp4",
-    "./img/example.mp4",
-    "./img/example.mp4",
-    "./img/example.mp4",
-    "./img/example.mp4",
+const imagesP = [
+    "./img/PBG01.jpeg",
+    "./img/PBG01.jpeg",
+    "./img/PBG02.jpeg",
+    "./img/PBG03.jpeg",
+    "./img/PBG03.jpeg",
+    "./img/PBG03.jpeg",
+    "./img/PBG04.jpeg",
+    "./img/PBG04.jpeg",
+    "./img/PBG05.jpeg",
+    "./img/PBG05.jpeg",
+    "./img/PBG06.jpeg",
+    "./img/PBG06.jpeg",
+    "./img/PBG07.jpeg",
+    "./img/PBG07.jpeg",
+    "./img/PBG08.jpeg",
+    "./img/PBG08.jpeg",
+    "./img/PBG09.jpeg",
+    "./img/PBG09.jpeg",
+    
 ]
 var currentQuestion = 0;
+var correctAnswers = 0;
 var currentCorrect = "";
 
 
@@ -26,7 +45,8 @@ function clearApp(){
 
 
 function setQuestion(index){
-    videoPlayer.src = videos[index];
+    // videoPlayer.src = videos[index];
+    image.src = imagesP[index];
     // console.log(document.querySelector(".question article header h1"));
     
     questionMenu.querySelector(".question article header h1").innerHTML = `Pergunta ${index+1}`;
@@ -39,12 +59,16 @@ function setQuestion(index){
     
     currentCorrect = data.perguntas[index].resposta_correta;
     
-    app.appendChild(videoPlayer);
+    app.appendChild(image);
     app.appendChild(questionMenu);
 
-    videoPlayer.addEventListener("ended", () => {
+    // videoPlayer.addEventListener("ended", () => {
+    //     questionMenu.classList.add("appear");
+    // });
+
+    setTimeout(() => {
         questionMenu.classList.add("appear");
-    });
+    }, 3000);
 
     currentQuestion ++;
 }
@@ -58,14 +82,55 @@ function play(){
 
 
 function answer(option){
-    if (option == currentCorrect){
-        clearApp();
-        setQuestion(currentQuestion);
-    } else{
-        clearApp();
-        alert("Resposta errada");
-        // Essa função vai fazer aparecer o vídeo de erro, ainda não está completa.
+    if (currentQuestion >= imagesP.length){
+        
+        if (option == currentCorrect){
+            correctAnswers ++;
+        }
 
-        setQuestion(currentQuestion);
+        if (correctAnswers > Math.floor(imagesP.length / 2 )){
+            isWinner();
+            return;
+        } else {
+            app.appendChild(finishMenu);        
+            app.querySelector("#modalGameOver article h1").innerHTML = `❌❌❌ Game over ( ${correctAnswers} / ${imagesP.length} ) ❌❌❌`;
+            app.querySelector("#modalGameOver article header img").src = "./img/initial-menu.jpeg";
+            return;
+        }
+        
     }
+
+    if (option == currentCorrect){
+        isCorrect();
+    } else{
+        isWrong();
+    }
+}
+
+function isCorrect(){
+    app.appendChild(modalCorrect);
+    app.querySelector(".modal-correct article h1").innerHTML = "⭐⭐⭐ Acertou! ⭐⭐⭐";
+    app.querySelector(".modal-correct article header video").src = "./img/transition.mp4";
+
+    correctAnswers ++;
+}
+
+function isWrong(){
+    app.appendChild(modalCorrect);
+    app.querySelector(".modal-correct article h1").innerHTML = "❌❌❌ Errou... ❌❌❌";
+    app.querySelector(".modal-correct article header video").src = "./img/transition.mp4";
+}
+
+function isWinner(){
+    app.appendChild(finishMenu);
+    app.querySelector("#modalGameOver article h1").innerHTML = `⭐⭐⭐ Parabéns ( ${correctAnswers} / ${imagesP.length} ) ⭐⭐⭐`;
+}
+
+function nextQuestion(){
+    clearApp();
+    setQuestion(currentQuestion);
+}
+
+function reStart(){
+    window.location.reload();
 }

@@ -5,17 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Corp-Quest</title>
     <link rel="stylesheet" href="./css/style.css">
+    <!-- importando fonte -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
 </head>
 <body>
 
     <div id="components">
         <section class="start-game"> 
-            <button>START</button>
+            <button onclick="play()">
+                <img src="./img/button_start.png" width="100%" height="100%" alt="start button image" >
+            </button>
         </section>
 
-        <video class="scene" src="./img/example.mp4" autoplay>
-
-        </video>
+        <img class="scene" src="./img/example.mp4">
 
 
         <section class="question">
@@ -25,13 +29,42 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur accusantium et quis ut, voluptatem quam iusto blanditiis deleniti ipsum iure repellat temporibus numquam. Repellat reprehenderit hic sit provident labore vero!</p>
                 </header>
                 <div class="alternatives">
-                    <button onclick="answer('A')"> <strong>A</strong> <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus voluptatum illo voluptas debitis numquam? Quos sapiente officia quia, dicta ad illo impedit assumenda laboriosam</p> </button>
-                    <button onclick="answer('B')"> <strong>B</strong> <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus voluptatum illo voluptas debitis numquam? Quos sapiente officia quia, dicta ad illo impedit assumenda laboriosam</p> </button>
-                    <button onclick="answer('C')"> <strong>C</strong> <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus voluptatum illo voluptas debitis numquam? Quos sapiente officia quia, dicta ad illo impedit assumenda laboriosam</p> </button>
-                    <button onclick="answer('D')"> <strong>D</strong> <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus voluptatum illo voluptas debitis numquam? Quos sapiente officia quia, dicta ad illo impedit assumenda laboriosam</p> </button>
+                    <button onclick="answer('A')"> <img src="./img/a.png" alt="alternative a image"> <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus voluptatum illo voluptas debitis numquam? Quos sapiente officia quia, dicta ad illo impedit assumenda laboriosam</p> </button>
+                    <button onclick="answer('B')"> <img src="./img/b.png" alt="alternative b image"> <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus voluptatum illo voluptas debitis numquam? Quos sapiente officia quia, dicta ad illo impedit assumenda laboriosam</p> </button>
+                    <button onclick="answer('C')"> <img src="./img/c.png" alt="alternative c image"> <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus voluptatum illo voluptas debitis numquam? Quos sapiente officia quia, dicta ad illo impedit assumenda laboriosam</p> </button>
+                    <button onclick="answer('D')"> <img src="./img/d.png" alt="alternative d image"> <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus voluptatum illo voluptas debitis numquam? Quos sapiente officia quia, dicta ad illo impedit assumenda laboriosam</p> </button>
                 </div>
             </article>
             
+        </section>
+
+        
+        <section class="modal-correct">
+            <article>
+                <header>
+                    <video id="video-correct" src="./img/example.mp4" autoplay >
+
+                    </video>
+                </header>
+                <h1> ⭐⭐⭐ Acertou! ⭐⭐⭐</h1>
+                
+                <button onclick="nextQuestion()">
+                    <img src="./img/continuar.png" alt="continue button imagem">
+                </button>
+            </article>
+        </section>
+
+        <section id="modalGameOver" class="modal-correct">
+            <article>
+                <header>
+                    <img src="./img/initial-menu.jpeg" alt="image header" width="100%">
+                </header>
+                <h1> ⭐⭐⭐ Parabéns! ⭐⭐⭐</h1>
+                
+                <button onclick="reStart()">
+                    <img src="./img/restart.png" alt="restart button imagem" width="280px">
+                </button>
+            </article>
         </section>
 
 
@@ -39,7 +72,9 @@
 
     <main class="app">
         <section class="start-game"> 
-            <button onclick="play()">START</button>
+            <button onclick="play()">
+                <img src="./img/button_start.png" width="100%" height="100%" alt="start button image" >
+            </button>
         </section>
     </main>
     

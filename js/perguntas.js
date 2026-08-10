@@ -72,18 +72,18 @@ const data = {
       },
       "resposta_correta": "B"
     },
-    {
-      "id": "1.1",
-      "caminho": 2,
-      "pergunta": "O que pode ser feito para extrair maior valor das relações competitivas da empresa?",
-      "alternativas": {
-        "A": "Sempre oferecer preços menores que os concorrentes.",
-        "B": "Criar propagandas que demonstram como essa empresa é melhor que os concorrentes.",
-        "C": "Focar em eliminar o concorrente do mercado.",
-        "D": "Implementar uma dinâmica baseada em Coopetição."
-      },
-      "resposta_correta": "D"
-    },
+    // {
+    //   "id": "1.1",
+    //   "caminho": 2,
+    //   "pergunta": "O que pode ser feito para extrair maior valor das relações competitivas da empresa?",
+    //   "alternativas": {
+    //     "A": "Sempre oferecer preços menores que os concorrentes.",
+    //     "B": "Criar propagandas que demonstram como essa empresa é melhor que os concorrentes.",
+    //     "C": "Focar em eliminar o concorrente do mercado.",
+    //     "D": "Implementar uma dinâmica baseada em Coopetição."
+    //   },
+    //   "resposta_correta": "D"
+    // }, 7
     {
       "id": "1.2",
       "caminho": 2,
@@ -120,18 +120,18 @@ const data = {
       },
       "resposta_correta": "A"
     },
-    {
-      "id": "3",
-      "caminho": 2,
-      "pergunta": "Como o poder se distribui em um trem de valor competitivo?",
-      "alternativas": {
-        "A": "Conforme o tamanho das empresas e o número de concorrentes que elas possuem, sejam eles simétricos ou assimétricos.",
-        "B": "De acordo com a imagem de mercado de cada empresa, quanto mais for conhecida, mais poder de barganha ela terá.",
-        "C": "De duas maneiras, pela diferenciação dos criadores de valor exclusivo e pelas extremidades do trem, que detêm as patentes e o contato com o cliente final.",
-        "D": "Conforme a proximidade com o cliente final, quanto mais contato mais poder a empresa terá."
-      },
-      "resposta_correta": "C"
-    },
+    // {
+    //   "id": "3",
+    //   "caminho": 2,
+    //   "pergunta": "Como o poder se distribui em um trem de valor competitivo?",
+    //   "alternativas": {
+    //     "A": "Conforme o tamanho das empresas e o número de concorrentes que elas possuem, sejam eles simétricos ou assimétricos.",
+    //     "B": "De acordo com a imagem de mercado de cada empresa, quanto mais for conhecida, mais poder de barganha ela terá.",
+    //     "C": "De duas maneiras, pela diferenciação dos criadores de valor exclusivo e pelas extremidades do trem, que detêm as patentes e o contato com o cliente final.",
+    //     "D": "Conforme a proximidade com o cliente final, quanto mais contato mais poder a empresa terá."
+    //   },
+    //   "resposta_correta": "C"
+    // }, 11
     {
       "id": "3.2",
       "caminho": 2,
@@ -156,42 +156,42 @@ const data = {
       },
       "resposta_correta": "B"
     },
-    {
-      "id": "1.2",
-      "caminho": 3,
-      "pergunta": "A que se referem as competições em relação a Valor agregado pela rede e a Ferramentas de interação?",
-      "alternativas": {
-        "A": "A primeira se refere aos pontos de diferenciação da plataforma que geram valor para os clientes, já a segunda, à facilidade com que clientes de lados opostos interagem entre si dentro da plataforma.",
-        "B": "A primeira se refere à facilidade com que o produto pode ser atualizado e distribuído aos clientes, a segunda, por sua vez, se refere ao valor que a quantidade de clientes e a qualidade do que eles oferecem proporciona.",
-        "C": "A primeira se refere a quantidade e qualidade do valor oferecido pelos clientes do negócio e a segunda se refere ao valor que a plataforma agrega a esses clientes.",
-        "D": "A primeira se refere a quantidade e qualidade do valor oferecido pelos clientes da rede de negócio, a segunda se refere à facilidade com que clientes distintos interagem dentro da plataforma."
-      },
-      "resposta_correta": "D"
-    },
-    {
-      "id": "2",
-      "caminho": 3,
-      "pergunta": "O que é um negócio de plataforma?",
-      "alternativas": {
-        "A": "Um modelo de negócio que gera valor facilitando a interação entre dois ou mais tipos de clientes, reduzindo a quantidade de ativos que a empresa tem de gerenciar.",
-        "B": "Um modelo de negócio baseado em desenvolver um website que facilite a divulgação de imagem da empresa.",
-        "C": "Uma vertente que busca incorporar tecnologias digitais totalmente à cultura da empresa.",
-        "D": "Um paradigma de mercado que permite um melhor relacionamento com concorrentes, aumentando a base de clientes por meio de parcerias."
-      },
-      "resposta_correta": "A"
-    },
-    {
-      "id": "2.2",
-      "caminho": 3,
-      "pergunta": "Isso significa que nosso negócio terá de migrar em 100% para essa nova dinâmica, caso contrário não haverá resultados?",
-      "alternativas": {
-        "A": "Não, bastam poucas mudanças para que o negócio se torne uma plataforma e já comece a gerar inúmeras vezes mais lucro.",
-        "B": "Isso, pois negócios que não implantam 100% da lógica acabam não conseguindo obter o máximo de lucro possível.",
-        "C": "Isso, já que não realizar todas as mudanças necessárias para se tornar uma plataforma vai atrasar a empresa em relação aos concorrentes.",
-        "D": "Não, um negócio não precisa ser 100% plataforma ou 100% não plataforma, ele pode aderir conforme o próprio contexto."
-      },
-      "resposta_correta": "D"
-    },
+    // {
+    //   "id": "1.2",
+    //   "caminho": 3,
+    //   "pergunta": "A que se referem as competições em relação a Valor agregado pela rede e a Ferramentas de interação?",
+    //   "alternativas": {
+    //     "A": "A primeira se refere aos pontos de diferenciação da plataforma que geram valor para os clientes, já a segunda, à facilidade com que clientes de lados opostos interagem entre si dentro da plataforma.",
+    //     "B": "A primeira se refere à facilidade com que o produto pode ser atualizado e distribuído aos clientes, a segunda, por sua vez, se refere ao valor que a quantidade de clientes e a qualidade do que eles oferecem proporciona.",
+    //     "C": "A primeira se refere a quantidade e qualidade do valor oferecido pelos clientes do negócio e a segunda se refere ao valor que a plataforma agrega a esses clientes.",
+    //     "D": "A primeira se refere a quantidade e qualidade do valor oferecido pelos clientes da rede de negócio, a segunda se refere à facilidade com que clientes distintos interagem dentro da plataforma."
+    //   },
+    //   "resposta_correta": "D"
+    // }, 14
+    // {
+    //   "id": "2",
+    //   "caminho": 3,
+    //   "pergunta": "O que é um negócio de plataforma?",
+    //   "alternativas": {
+    //     "A": "Um modelo de negócio que gera valor facilitando a interação entre dois ou mais tipos de clientes, reduzindo a quantidade de ativos que a empresa tem de gerenciar.",
+    //     "B": "Um modelo de negócio baseado em desenvolver um website que facilite a divulgação de imagem da empresa.",
+    //     "C": "Uma vertente que busca incorporar tecnologias digitais totalmente à cultura da empresa.",
+    //     "D": "Um paradigma de mercado que permite um melhor relacionamento com concorrentes, aumentando a base de clientes por meio de parcerias."
+    //   },
+    //   "resposta_correta": "A"
+    // }, 15
+    // {
+    //   "id": "2.2",
+    //   "caminho": 3,
+    //   "pergunta": "Isso significa que nosso negócio terá de migrar em 100% para essa nova dinâmica, caso contrário não haverá resultados?",
+    //   "alternativas": {
+    //     "A": "Não, bastam poucas mudanças para que o negócio se torne uma plataforma e já comece a gerar inúmeras vezes mais lucro.",
+    //     "B": "Isso, pois negócios que não implantam 100% da lógica acabam não conseguindo obter o máximo de lucro possível.",
+    //     "C": "Isso, já que não realizar todas as mudanças necessárias para se tornar uma plataforma vai atrasar a empresa em relação aos concorrentes.",
+    //     "D": "Não, um negócio não precisa ser 100% plataforma ou 100% não plataforma, ele pode aderir conforme o próprio contexto."
+    //   },
+    //   "resposta_correta": "D"
+    // }, 16
     {
       "id": "3",
       "caminho": 3,
@@ -204,17 +204,17 @@ const data = {
       },
       "resposta_correta": "C"
     },
-    {
-      "id": "3.2",
-      "caminho": 3,
-      "pergunta": "Quais serão as principais características do nosso novo marketplace?",
-      "alternativas": {
-        "A": "Atuam como intermediários entre diferentes partes, facilitando pagamentos e transações financeiras, sendo que cada parte é atraída conforme a outra também é.",
-        "B": "Reúnem dois grupos distintos de clientes em uma troca direta de valor, onde cada grupo é atraído pela quantidade e qualidade do outro.",
-        "C": "Desempenha o papel de fornecer conteúdo atraente aos consumidores finais, de modo a conseguir uma grande rede de clientes para atrair empresas interessadas em divulgar seus anúncios.",
-        "D": "Fornecem padrões uniformes para o projeto de produtos subsequentes, a fim de possibilitar a interoperabilidade entre esses produtos e beneficiar o consumidor final."
-      },
-      "resposta_correta": "B"
-    }
+    // {
+    //   "id": "3.2",
+    //   "caminho": 3,
+    //   "pergunta": "Quais serão as principais características do nosso novo marketplace?",
+    //   "alternativas": {
+    //     "A": "Atuam como intermediários entre diferentes partes, facilitando pagamentos e transações financeiras, sendo que cada parte é atraída conforme a outra também é.",
+    //     "B": "Reúnem dois grupos distintos de clientes em uma troca direta de valor, onde cada grupo é atraído pela quantidade e qualidade do outro.",
+    //     "C": "Desempenha o papel de fornecer conteúdo atraente aos consumidores finais, de modo a conseguir uma grande rede de clientes para atrair empresas interessadas em divulgar seus anúncios.",
+    //     "D": "Fornecem padrões uniformes para o projeto de produtos subsequentes, a fim de possibilitar a interoperabilidade entre esses produtos e beneficiar o consumidor final."
+    //   },
+    //   "resposta_correta": "B"
+    // } 18
   ]
 }

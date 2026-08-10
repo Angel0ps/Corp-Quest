@@ -19,18 +19,18 @@ const imagesP = [
     "./img/PBG03.jpeg",
     "./img/PBG03.jpeg",
     "./img/PBG03.jpeg",
-    "./img/PBG04.jpeg",
+    // "./img/PBG04.jpeg", 7
     "./img/PBG04.jpeg",
     "./img/PBG05.jpeg",
     "./img/PBG05.jpeg",
-    "./img/PBG06.jpeg",
+    // "./img/PBG06.jpeg", 11
     "./img/PBG06.jpeg",
     "./img/PBG07.jpeg",
-    "./img/PBG07.jpeg",
-    "./img/PBG08.jpeg",
-    "./img/PBG08.jpeg",
+    // "./img/PBG07.jpeg", 14
+    // "./img/PBG08.jpeg", 15
+    // "./img/PBG08.jpeg", 16
     "./img/PBG09.jpeg",
-    "./img/PBG09.jpeg",
+    // "./img/PBG09.jpeg", 18
     
 ]
 var currentQuestion = 0;
